@@ -50,9 +50,9 @@ export const typeDefs = gql`
   type Mutation {
     # Users
     createUser(input: UserInput): String
+    authenticateUser(input: AuthInput): Token
 
     # Projects
-    authenticateUser(input: AuthInput): Token
     createProject(input: ProjectInput): Project
     updateProject(id: ID!, input: ProjectInput): Project
     deleteProject(id: ID!): String

@@ -23,6 +23,7 @@ export type GraphQLContext = {
 export type UserPayload = {
   id: Types.ObjectId;
   email: UserInput["email"];
+  name: UserInput["name"];
 };
 
 // Project types

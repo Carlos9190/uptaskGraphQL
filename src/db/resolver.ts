@@ -84,7 +84,11 @@ export const resolvers = {
 
       // Allow access
       return {
-        token: createToken({ id: userExists.id, email: userExists.email }),
+        token: createToken({
+          id: userExists.id,
+          email: userExists.email,
+          name: userExists.name,
+        }),
       };
     },
     createProject: async (
